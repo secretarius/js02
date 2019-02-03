@@ -61,23 +61,41 @@ console.log('length: ' + productNames.length);
 // });
 
 //          0    1   2   3   4   5
-let arr = [100, 42, 37, 98, 56, 99];
+//let arr = [100, 42, 37, 98, 56, 99];
 
-function sumOddEls(arr) {
-    let total = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if (i % 2 === 1) {
-            total += arr[i];
-        }
-    }
-    return total;   
+// function sumOddEls(arr) {
+//     let total = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (i % 2 === 1) {
+//             total += arr[i];
+//         }
+//     }
+//     return total;   
+// }
+
+// function modernSumOddEls(arr) {
+//     return arr.filter( (el, idx ) => idx % 2 )
+//       .reduce(  (acc, el) => acc + el, 0);
+// }
+
+// console.log(sumOddEls(arr));
+// console.log(modernSumOddEls(arr));
+// let arrAy = [100, 42, 37, 98, 56, 99];
+// function sumOddEls(arrAy){
+//         return arrAy.filter ( (el, ind) => 
+//     ind % 2 === 1);
+//     }
+
+// console.log(sumOddEls(arrAy));
+
+function padIt(str,n){
+
+  for (let i = 0; i < n; n++){ 
+        if(n % 2 === 1) {
+            str = "*" + str 
+        } else {str = str + "*"}
+return str;
 }
 
-function modernSumOddEls(arr) {
-    return arr.filter( (el, idx ) => idx % 2 )
-       .reduce(  (acc, el) => acc + el, 0);
 }
-
-console.log(sumOddEls(arr));
-console.log(modernSumOddEls(arr));
 
