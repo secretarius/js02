@@ -1,8 +1,35 @@
-// for (let i = 99; i >= 1; i--) {
-//     if (i % 2 === 1) {
-//       console.log(i);
-//     }
-// }
+// Loop 
+const num = parseInt(prompt('Enter Fibinachi number - " Exemple with loop"'));
+
+const result = fibLop(num);
+alert(result);
+
+function fibLop(num){
+let first = 0;
+let second = 1;
+
+      for( let i = 0; i < num; i++){
+        
+          let next = first;
+          first = second;
+          second = next + second;
+        
+ }
+      return first;
+}          
+
+
+
+
+
+
+
+// Lections work
+//  for (let i = 9; i >= 1; i--) {
+//      if (i % 2 === 1) {
+//       console.log(i) + "*";
+//      }
+//  }
 
 
 // let i = 0;
@@ -23,24 +50,24 @@
 //     num = parseFloat(prompt('Enter a number'));
 // }
 
-let productNames = [];
-productNames.push('Tesla X');
-productNames.push('Chevrolet Corvette');
-productNames.push('LC Prado');
-console.log(productNames[0]);
-productNames[0] = 'Tesla S';
-console.log(productNames[0]);
-productNames[3] = 'ZAZ Lanos';
-console.log('length: ' + productNames.length);
+// let productNames = [];
+// productNames.push('Tesla X');
+// productNames.push('Chevrolet Corvette');
+// productNames.push('LC Prado');
+// console.log(productNames[0]);
+// productNames[0] = 'Tesla S';
+// console.log(productNames[0]);
+// productNames[3] = 'ZAZ Lanos';
+// console.log('length: ' + productNames.length);
 
-// console.log('Printing all');
+// // console.log('Printing all');
 
-// for (let i = 0; i < productNames.length; i++) {
-//     console.log(productNames[i]);
-// }
+// // for (let i = 0; i < productNames.length; i++) {
+// //     console.log(productNames[i]);
+// // }
 
-productNames[10] = 'Hummer';
-console.log('length: ' + productNames.length);
+// productNames[10] = 'Hummer';
+// console.log('length: ' + productNames.length);
 
 // console.log('Printing all again');
 
@@ -88,14 +115,26 @@ console.log('length: ' + productNames.length);
 
 // console.log(sumOddEls(arrAy));
 
-function padIt(str,n){
+// function padIt(str,n){
+//   let star = str;
+//   for (let i = 0; i < n; n++){ 
+//         if(n % 2 === 1) {
+//             star = "*" + str 
+//         } 
+//         return star;
+// }
 
-  for (let i = 0; i < n; n++){ 
-        if(n % 2 === 1) {
-            str = "*" + str 
-        } else {str = str + "*"}
-return str;
-}
+// // }
+// function padIt(str,n){
+//   let star;
+//      for (let i = 0; i < n; n++){ 
+//           star = str + "*" 
+//          } 
+//          return star;
+ 
+// }
 
-}
+// console.log(padIt("a", 3));
+// console.log(padIt("a", 4));
+// console.log(padIt("a", 5));
 
