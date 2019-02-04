@@ -5,7 +5,7 @@ const res = fibRec(n);
 alert(res);
 
 function fibRec(n) {
-    if (n == 1 || n == 2){
+    if (n == 1 || n == 2 || n > 999){
         return 1 
     }
     if (n == 0){
